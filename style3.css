@@ -1,0 +1,142 @@
+body{
+font-family:Arial;
+background:#f2f2f2;
+margin:0;
+}
+.navbar{
+background:white;
+padding:10px;
+border-bottom:1px solid#ccc;
+}
+.navbar a{
+margin-right:15px;
+text-decoration:none;
+color:black;
+padding:8px;
+}
+.navbar a:hover{
+color:blue;
+}
+
+#main-content{
+display:flex;
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.left-column{
+flex:1;
+padding:10px;
+}
+
+.right-column{
+flex:2;
+padding:10px;
+}
+
+.profile-img{
+width:150px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.job-title{
+color:gray;
+font-style:italic;
+}
+
+.section a{
+color:blue;
+text-decoration:none;
+}
+
+.section a:hover{
+text-decoration:underline;
+}
+
+.skills-box{
+list-style:none;
+padding:10px;
+background:white;
+border-radius:5px;
+border:1px solid#ccc;
+width:fit-content;
+}
+
+.skills-box li{
+margin-bottom:5px;
+}
+
+.about-text{
+line-height:1.5;
+text-align:justify;
+margin-right:10px;
+}
+
+.message-form input[type="text"],
+.message-form input[type="email"],
+.message-form textarea{
+width:100%;
+padding:10px;
+box-sizing:border-box;
+margin-top:5px;
+}
+
+.message-form input[type="submit"]{
+padding:10px 15px;
+border-radius:4px;
+cursor:pointer;
+background:black;
+color:white;
+border:none;
+transition:0.3s;
+}
+
+.message-form input[type="submit"]:hover{
+background:gray;
+}
+
+footer{
+text-align:center;
+background:#ddd;
+padding:10px;
+margin-top:20px;
+}
+
+/* --- Dark Mode Styles for Task A --- */
+.dark-mode {
+    background: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.dark-mode .navbar {
+    background: #333;
+    border-bottom: 1px solid #555;
+}
+
+.dark-mode .navbar a {
+    color: #f0f0f0;
+}
+
+.dark-mode .navbar a:hover {
+    color: #4da6ff;
+}
+
+.dark-mode .skills-box {
+    background: #333;
+    border: 1px solid #555;
+}
+
+.dark-mode footer {
+    background: #333;
+    color: #f0f0f0;
+}
+
+.dark-mode .message-form input[type="text"],
+.dark-mode .message-form input[type="email"],
+.dark-mode .message-form textarea {
+    background: #444;
+    color: #f0f0f0;
+    border: 1px solid #666;
+}

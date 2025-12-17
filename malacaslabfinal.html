@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Profile</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="navbar">
+<a href="#home-about">Home</a>
+<a href="#home-about">About Me</a>
+<a href="#lab-1-content">Laboratory 1</a>
+<a href="#lab-2-content">Laboratory 2</a>
+<button id="themeBtn">Toggle Dark Mode</button>
+</header>
+
+<section id="main-content" class="active-section">
+    <div id="home-about" class="main-profile-view">
+        <div class="left-column">
+            <div id="home">
+                <img src="malacaspic.jpg" class="profile-img" id="profilePic">
+                <h2>Sigmund Malacas</h2>
+                <p class="job-title" id="jobTitle">Web Developer</p>
+                <button id="editJobBtn">Edit Job Title</button>
+            </div>
+
+            <div class="section">
+                <h3>Contact</h3>
+                <p>Phone number: 0976 359 7256</p>
+                <p>Email: <a href="mailto:sigmund200606@gmail.com">sigmund200606@gmail.com</a></p>
+            </div>
+
+            <div class="section" id="skillsSection">
+                <h3>Skills</h3>
+                <ul class="skills-box">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <button id="toggleSkillsBtn">Hide Skills</button>
+        </div>
+
+        <div class="right-column">
+            <div class="section" id="about">
+                <h2>About Me</h2>
+                <h3 id="timeGreeting">Hello!</h3>
+                <p class="about-text">I am a shy but determined IT student who's learning to be more confident. I play bass in a band and dream of making it big while building a stable IT career.</p>
+            </div>
+
+            <div class="section">
+                <h2>Message Me</h2>
+                <form class="message-form" onsubmit="return validateForm()">
+                    <p>Name<br><input type="text" id="nameField" name="name"></p>
+                    <p>Email<br><input type="email" id="emailField" name="email"></p>
+                    <p><textarea id="msgBox" name="message" rows="4" maxlength="200" placeholder="Write your message here..."></textarea></p>
+                    <p>Characters left: <span id="counter">200</span></p> 
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="lab-1-content" class="lab-section hidden-section">
+    <div class="lab-content-box">
+        <div class="lab-header">Laboratory 1</div>
+        <div class="lab1-style">
+            <div class="lab1-container">
+                <div id="lab1-home">
+                    <img src="malacaspic.jpg" class="profile-img" style="width:200px;height:200px;">
+                    <h2>Sigmund Malacas</h2>
+                    <p>Web Developer</p>
+                </div>
+                <div class="section">
+                    <h3>Contact</h3>
+                    <p>Phone number: 0976 359 7256</p>
+                    <p>Email: sigmund200606@gmail.com</p>
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="section" id="lab1-about">
+                    <h2>About Me</h2>
+                    <p>I am a shy but determined IT student who's learning to be more confident. I play bass in a band and dream of making it big while building a stable IT career.</p>
+                </div>
+                <div class="section">
+                    <h2>Message Me</h2>
+                    <form>
+                        <p>Name<br>
+                        <input type="text" name="name">
+                        </p>
+                        <p>Email<br>
+                        <input type="email" name="email">
+                        </p>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="lab-2-content" class="lab-section hidden-section">
+    <div class="lab-content-box">
+        <div class="lab-header">Laboratory 2</div>
+        <div class="lab2-style">
+            <div class="lab2-content-wrapper">
+                <div class="lab2-left-column">
+                    <div id="lab2-home">
+                        <img src="malacaspic.jpg" class="profile-img">
+                        <h2>Sigmund Malacas</h2>
+                        <p class="job-title">Web Developer</p>
+                    </div>
+
+                    <div class="section">
+                        <h3>Contact</h3>
+                        <p>Phone number: 0976 359 7256</p>
+                        <p>Email: <a href="mailto:sigmund200606@gmail.com">sigmund200606@gmail.com</a></p>
+                    </div>
+
+                    <div class="section">
+                        <h3>Skills</h3>
+                        <ul class="skills-box">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="lab2-right-column">
+                    <div class="section" id="lab2-about">
+                        <h2>About Me</h2>
+                        <p class="about-text">I am a shy but determined IT student who's learning to be more confident. I play bass in a band and dream of making it big while building a stable IT career.</p>
+                    </div>
+
+                    <div class="section">
+                        <h2>Message Me</h2>
+                        <form class="message-form">
+                            <p>Name<br><input type="text" name="name"></p>
+                            <p>Email<br><input type="email" name="email"></p>
+                            <p><textarea name="message" rows="4" placeholder="Write your message here..."></textarea></p>
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+WebProg — Web Programming 2025
+<p id="dateDisplay"></p>
+</footer>
+
+</body>
+</html>

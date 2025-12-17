@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Profile</title>
+<style>
+body {
+font-family: Arial;
+background: #f2f2f2;
+margin: 0;
+}
+nav {
+background: white;
+padding: 10px;
+border-bottom: 1px solid #ccc;
+}
+nav a {
+margin-right: 15px;
+text-decoration: none;
+color: black;
+}
+.container {
+width: 90%;
+max-width: 900px;
+margin: auto;
+margin-top: 20px;
+}
+.profile-img {
+width: 100%;
+max-width: 250px;
+border-radius: 5px;
+}
+.section {
+margin-top: 20px;
+}
+input[type="text"],
+input[type="email"] {
+width: 95%;
+padding: 7px;
+margin-top: 5px;
+}
+input[type="submit"] {
+padding: 8px 15px;
+background: black;
+color: white;
+border: none;
+cursor: pointer;
+}
+footer {
+text-align: center;
+margin-top: 30px;
+padding: 10px;
+color: #555;
+}
+</style>
+</head>
+<body>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About Me</a>
+</nav>
+<div class="container">
+<div id="home">
+<img src="malacaspic.jpg" class="profile-img" style = "width:200px;length:200px;">
+<h2>Sigmund Malacas</h2>
+<p>Web Developer</p>
+</div>
+<div class="section">
+<h3>Contact</h3>
+<p>Phone number: 0976 359 7256</p>
+<p>Email: sigmund200606@gmail.com</p>
+<h3>Skills</h3>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+</div>
+<div class="section" id="about">
+<h2>About Me</h2>
+<p>I am a shy but determined IT student who's learning to be more confident. I play bass in a band and dream of making it big while building a stable IT career.</p>
+</div>
+<div class="section">
+<h2>Message Me</h2>
+<form>
+<p>Name<br>
+<input type="text" name="name">
+</p>
+<p>Email<br>
+<input type="email" name="email">
+</p>
+<input type="submit" value="Send">
+</form>
+</div>
+</div>
+<footer>
+WebProg — Web Programming 2025
+</footer>
+</body>
+</html>
