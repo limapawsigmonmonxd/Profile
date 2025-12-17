@@ -121,21 +121,18 @@ function setupSectionNavigation() {
     document.querySelectorAll('.navbar a').forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault(); 
+            // Get the target ID from the href (e.g., #main-content or #lab-1-content)
             const targetId = this.getAttribute('href').substring(1); 
             
-            // Determine the section to show
-            let sectionToShow;
-            if (targetId === 'home-about') {
-                sectionToShow = document.getElementById('main-content');
-            } else {
-                sectionToShow = document.getElementById(targetId);
-            }
+            // Find the section element based on the target ID
+            const sectionToShow = document.getElementById(targetId);
 
-            // Hide all sections and then show the target section
+            // Hide all sections first
             allSections.forEach(section => {
                 section.classList.add('hidden-section');
             });
 
+            // Show the target section
             if (sectionToShow) {
                 sectionToShow.classList.remove('hidden-section');
             }
